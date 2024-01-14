@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Specify a concise title that includes relevant keywords -->
-    <title>M3M Antalya Hills - Luxury Apartments in Sector 79, Gurugram</title>
+    <title>M3M Antalya Hills</title>
 
     <!-- Add a meta description for search engines -->
     <meta name="description"
@@ -50,6 +50,8 @@
 
     <!-- Favicon for the website -->
     <link rel="icon" href="assets/logo.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 
@@ -129,15 +131,15 @@
                 <div class="card header-card-right">
                     <div class="card-body">
                         <p>Schedule A Site Visit</p>
-                        <form>
+                        <form action="https://formspree.io/f/mkndgbwa" method="post">
                             <div class="mb-3">
+                                <input type="text" class="form-control fc" id="exampleInputEmail1"
+                                    placeholder="Your Full Name" name="name">
                                 <input type="email" class="form-control fc" id="exampleInputEmail1"
-                                    placeholder="Your Full Name">
-                                <input type="email" class="form-control fc" id="exampleInputEmail1"
-                                    placeholder="Email address">
+                                    placeholder="Email address" name="email">
 
-                                <input type="email" class="form-control fc" id="exampleInputEmail1"
-                                    placeholder="Phone/Mobile">
+                                <input type="text" class="form-control fc" id="exampleInputEmail1"
+                                    placeholder="Phone/Mobile" name="phone">
 
 
 
@@ -162,15 +164,15 @@
                     <div class="card overview-card-right">
                         <div class="card-body">
                             <h1>M3M ANTALYA HILLS</h1>
-                            <form class="d-flex flex-column">
+                            <form class="d-flex flex-column" action="https://formspree.io/f/mkndgbwa" method="post">
                                 <div class="mb-3 text-start">
+                                    <input type="text" class="form-control fc" id="exampleInputEmail1"
+                                        placeholder="Your Full Name" name="name">
                                     <input type="email" class="form-control fc" id="exampleInputEmail1"
-                                        placeholder="Your Full Name">
-                                    <input type="email" class="form-control fc" id="exampleInputEmail1"
-                                        placeholder="Email address">
+                                        placeholder="Email address" name="email">
 
-                                    <input type="email" class="form-control fc" id="exampleInputEmail1"
-                                        placeholder="Phone/Mobile">
+                                    <input type="text" class="form-control fc" id="exampleInputEmail1"
+                                        placeholder="Phone/Mobile" name="phone">
 
 
 
@@ -340,15 +342,15 @@
         <div class="card col-md-6 cs">
             <div class="card-body">
                 <div class="row">
-                    <form>
+                    <form action="https://formspree.io/f/mkndgbwa" method="post">
                         <div class="mb-3 text-start contact-us">
+                            <input type="text" class="form-control fc" id="exampleInputEmail1"
+                                placeholder="Your Full Name" name="name">
                             <input type="email" class="form-control fc" id="exampleInputEmail1"
-                                placeholder="Your Full Name">
-                            <input type="email" class="form-control fc" id="exampleInputEmail1"
-                                placeholder="Email address">
+                                placeholder="Email address" name="email">
 
-                            <input type="email" class="form-control fc" id="exampleInputEmail1"
-                                placeholder="Phone/Mobile">
+                            <input type="text" class="form-control fc" id="exampleInputEmail1"
+                                placeholder="Phone/Mobile" name="phone">
                         </div>
                         <button type="submit" class="btn btn-primary submit-btn align-self-start cb ">GET CALL
                             BACK</button>
@@ -370,29 +372,47 @@
             send updates y share data with rarareg to the mobile number/emall id registered with us</p>
     </div>
 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <div class="modal fade" id="popupForm" tabindex="-1" role="dialog" aria-labelledby="popupFormLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Subscribe to Our Newsletter</h5>
-                    <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title" id="popupFormLabel">Submit Your Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <!-- Your form goes here -->
-                    <form action="#" method="post">
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
+                    <!-- Bootstrap Form -->
+                    <form action="https://formspree.io/f/mkndgbwa" method="POST">
+                        <div class="mb-3 row">
+                            <label for="name" class="col-sm-3 col-form-label">Name :</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                        <div class="mb-3 row">
+                            <label for="email" class="col-sm-3 col-form-label">Email :</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="phone" class="col-sm-3 col-form-label">Phone :</label>
+                            <div class="col-sm-9">
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <div class="whatsapp-icon" id="whatsappIcon">
+        <a href="https://wa.me/+917889265825" target="_blank">
+            <img src="assets/wp.png" alt="WhatsApp Icon">
+        </a>
+    </div>
+
 
     <!-- Include jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

@@ -129,6 +129,11 @@ html {
       font-size: 30px;
       padding: 0px 5px;
     }
+
+    @media only screen and (max-width: 600px) {
+      /* Your styles for extra small devices go here */
+
+  }
   }
   @media (max-width: 742px) {
     .header {
@@ -488,5 +493,23 @@ html {
   .close-btn {
     cursor: pointer;
   }
+
+  .modal-content{
+    color: black !important;
+  }
+
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-icon img {
+    width: 100%; /* Adjust the size as needed */
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
   
   
