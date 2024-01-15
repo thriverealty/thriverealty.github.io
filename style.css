@@ -1,3 +1,5 @@
+
+
 html {
     scroll-behavior: smooth;
   }
@@ -43,7 +45,7 @@ html {
       border-color: transparent !important;
       color: white !important;
     }
-    @media (max-width: 742px) {
+    /* @media (max-width: 742px) {
       .centered-div {
         margin-top: 20px;
         border-radius: 5px;
@@ -51,7 +53,7 @@ html {
       .header-card-left {
         height: 600px !important;
       }
-    }
+    } */
     .header-card-left::before {
       content: "";
       position: absolute;
@@ -132,7 +134,50 @@ html {
 
     @media only screen and (max-width: 600px) {
       /* Your styles for extra small devices go here */
+      .cdf {
+        text-align: left;
+        position: relative;
+        left: 40px;
+      }
+      .header-card-left {
+        width: 33rem;
+        border-top-left-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+        height: 500px !important;
+        position: relative;
+        border: 0;
+        background-color: rgba(0, 0, 0, 0.4) !important;
+        border-color: transparent !important;
+        color: white !important;
 
+        .hl {
+          list-style: none;
+          position: relative;
+          /* right: 40px !important; */
+          li {
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0.6) !important;
+            border-color: transparent !important;
+            width: 100%;
+            padding: 2px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            position: relative;
+            right: 20px;
+          }
+        }
+        h1{
+          position: relative;
+          right: 20px;
+        }
+        p{
+          position: relative;
+          right: 20px;
+        }
+      }
+      
   }
   }
   @media (max-width: 742px) {
@@ -163,8 +208,15 @@ html {
       height: 20rem;
       border-radius: 15px;
     }
+    @media only screen and (max-width: 600px){
+      .overview{
+        /* margin-top: 100px !important; */
+        position: relative;
+        top: 0px;
+      }
+    }
   }
-  @media (max-width: 742px) {
+  /* @media (max-width: 742px) {
     .overview-card-right {
       align-items: center;
     }
@@ -172,7 +224,7 @@ html {
       width: 100%;
       height: auto;
     }
-  }
+  } */
   .price-list {
     background-image: url("assets/p.png");
     background-size: cover; /* Adjust as needed */
