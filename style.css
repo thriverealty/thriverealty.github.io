@@ -558,8 +558,8 @@ html {
 }
 
 .whatsapp-icon img {
-    width: 100%; /* Adjust the size as needed */
-    height: 50px;
+    width: 60px !important; /* Adjust the size as needed */
+    height: 50px !important;
     border-radius: 50%;
     cursor: pointer;
 }
