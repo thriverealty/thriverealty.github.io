@@ -303,6 +303,30 @@ html {
         color: white;
       }
     }
+
+    
+
+  }
+  #carouselExampleControls{
+    display: none;
+  }
+  #carouselExampleControls1{
+    display: none;
+  }
+  @media only screen and (max-width: 600px){
+    #amen{
+      display: none;
+
+    }
+    #carouselExampleControls{
+      display:block;
+    }
+    #carouselExampleControls1{
+      display: block;
+    }
+    #gall{
+      display: none;
+    }
   }
   
   .gallery {
