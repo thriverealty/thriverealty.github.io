@@ -349,7 +349,25 @@ html {
       object-fit: cover;
     }
   }
+  #carouselExampleControls1 .carousel-item img {
+    height: 300px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensure the image covers the specified height */
+  }
   
+  /* Set a fixed height for the carousel inner container */
+  #carouselExampleControls1 .carousel-inner {
+    height: 300px; /* Adjust the height as needed */
+  }
+
+  #carouselExampleControls .carousel-item img {
+    height: 300px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensure the image covers the specified height */
+  }
+  
+  /* Set a fixed height for the carousel inner container */
+  #carouselExampleControls .carousel-inner {
+    height: 300px; /* Adjust the height as needed */
+  }
   .location {
     .location-img {
       height: 80%;
