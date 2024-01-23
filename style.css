@@ -254,6 +254,7 @@ html {
     .check-img {
       height: 30px !important;
       width: 30px !important;
+      display: none;
     }
     .cc {
       position: relative;
@@ -411,6 +412,7 @@ html {
     .check-img {
       height: 30px !important;
       width: 30px !important;
+      display: none;
     }
     .cc {
       position: relative;
