@@ -252,8 +252,8 @@ html {
       text-align: left;
     }
     .check-img {
-      height: 30px;
-      width: 30px;
+      height: 30px !important;
+      width: 30px !important;
     }
     .cc {
       position: relative;
@@ -409,8 +409,8 @@ html {
       text-align: left;
     }
     .check-img {
-      height: 30px;
-      width: 30px;
+      height: 30px !important;
+      width: 30px !important;
     }
     .cc {
       position: relative;
